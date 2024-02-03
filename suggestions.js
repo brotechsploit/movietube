@@ -1,0 +1,16 @@
+let suggestions =[
+    "mama otis",
+    "ongele",
+    "Blaiz kush",
+    "vybz kartel",
+    "popcan",
+    "migos",
+    "quavo",
+    "offset",
+    "lildurk",
+    "meekmill",
+    "jason statham",
+    "jack uwujing",
+    "youtube",
+    "Blogger",
+];

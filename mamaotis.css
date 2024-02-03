@@ -1,0 +1,649 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.header{
+    height: 9vh;
+    align-items: center;
+    background: aqua;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.nav-left{
+    width: 100px;
+    display: flex;
+}
+
+
+
+.nav-left h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: blue;
+}
+
+.nav-right{
+    align-items: center;
+    display: flex
+}
+
+.search{
+    padding: 0px 15px;
+    background: #efe;
+    width: 400px;
+    border-radius: 20px;
+
+}
+
+.search .row{
+    display: flex;
+    padding: 10px 8px;
+    justify-content: space-between;
+}
+
+.search input{
+    width: 300px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.search .kilo{
+    color: #ff7200;
+}
+
+.search .kilo:hover{
+    color: aquamarine;
+}
+
+.search .fa-search{
+    width: 25px;
+    color: blue;
+}
+
+.search input ,textarea{
+    padding-left: 5px;
+}
+
+.search ::placeholder{
+    color: blue;
+    font-weight: 900;
+}
+
+
+.side-bar{
+    z-index: 2;
+    position: absolute;
+    width: 250px;
+    background: #efe;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    height: 93vh;
+    overflow-y: scroll;
+    top: 60px;
+    position: fixed;
+}
+
+.side-bar .fa{
+    width: 25px;
+    color: #ff7200;
+}
+
+.smallsidebar{
+    width: 50px;
+}
+
+.side-bar ul{
+    padding: 10px 15px;
+    margin: 6px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.side-bar ul li{
+    margin: 10px;
+    text-overflow: inherit;
+    text-align: left;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.side-bar ul li a{
+    color: black;
+    font-weight: 700;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    
+}
+.side-bar ul li:hover{
+    background: palegreen;
+}
+
+hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: aqua;
+}
+.grid-container{
+    box-sizing: border-box;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-left: 250px;
+    margin-right: 10px;
+    overflow-y: scroll;
+    height: 100vh;
+    
+
+}
+
+.videos{
+    padding-top: 10px;
+    margin-left: 10px
+
+
+}
+
+.videos .row{
+    display: block;
+}
+
+.col{
+    display: flex;
+    margin: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.video-col{
+    flex-basis: 32%;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-col video{
+    width: 100%;
+}
+
+.videos .rowel{
+    display: flex;
+}
+
+.layer{
+    display: block;
+    padding-top: 0px;
+    margin-left: 10px;
+    background: #fff;
+}
+
+.contain{
+    display: flex;
+}
+.layer img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.layer p{
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 1px;
+    text-align: left;
+    justify-content: center;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+}
+
+.layer .oloo{
+    display: flex;
+}
+
+.last{
+    margin-bottom: 70px;
+    margin-left: 10px;
+    
+}
+
+.layer input{
+    background: #ff7200;
+    width: 70px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+
+
+.layer input:hover{
+    color: aqua;
+
+}
+
+
+
+.container{
+    margin-top: 70px;
+    width: 80%;
+    background: #222;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 260px;
+    position: fixed;
+    
+}
+
+.swiper{
+    width: 400px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+.swiper-slide video{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.gallery{
+    text-align: center;
+
+}
+
+.gallery h3{
+    margin-left: 40px;
+    color: #ff7200;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.rowel{
+    display: flex;
+}
+
+.gallery-col{
+    flex-basis: 40%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin: 2px;
+    margin-left: 10px;
+}
+
+.gallery-col video{
+    width: 100%;
+}
+.layer{
+    width: 100%;
+    padding-top: 0px;
+    margin-left: 0px;
+}
+
+.layer-col{
+    background: #efe;
+    text-align: left;
+    display: flex;
+    margin-left: 0;
+}
+.layer-col .low a{
+    text-align: left;
+
+}
+
+.layer-col .low p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+}
+.omolo{
+    margin-bottom: 40px;
+}
+
+
+
+
+.omolo-col{
+    flex-basis: 28%;
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    margin: 8px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.omolo-col video{
+    width: 100%;
+    height: 100%;
+}
+
+.omolo h3{
+    margin-left: 40px;
+    text-align: left;
+    color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.nav-left .menuicon img{
+    display: none;
+}
+
+.menuicon img{
+    width: 25px;
+}
+
+.close{
+    text-align: right;
+    display: none;
+}
+
+.close img{
+    width: 25px;
+}
+
+.rowel{
+    display: flex;
+}
+
+@media(max-width :900px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+    
+    .header{
+        height: 8vh;
+        align-items: center;
+        background: aqua;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    
+    .nav-left h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        color: blue;
+    }
+    
+    .nav-right{
+        align-items: center;
+        display: inline-block;
+    }
+    
+    .search{
+        padding: 0px 15px;
+        background: #efe;
+        width: 250px;
+        border-radius: 20px;
+    
+    }
+    
+    .search .row{
+        display: flex;
+        padding: 10px 8px;
+        justify-content: space-between;
+    }
+    
+    .search input{
+        width: 200px;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    
+    .search button{
+        border: none;
+        outline: none;
+        background: none;
+    }
+    
+    .search .kilo{
+        color: #ff7200;
+    }
+    
+    .search .kilo:hover{
+        color: aquamarine;
+    }
+    
+    .search .fa-search{
+        width: 25px;
+        color: blue;
+    }
+    
+    .search input ,textarea{
+        padding-left: 5px;
+    }
+    
+    .search ::placeholder{
+        color: blue;
+        font-weight: 900;
+    }
+    
+    
+    .side-bar{
+        z-index: 2;
+        position: absolute;
+        width: 250px;
+        background: #efe;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        height: 93vh;
+        overflow-y: scroll;
+        top: 67px;
+        position: fixed;
+        left: -250px;
+        transition: 0.5s;
+    }
+    
+    .smallsidebar{
+        width: 50px;
+    }
+    
+    .side-bar ul{
+        margin: 6px;
+        padding: 8px 15px;
+    }
+    
+    .side-bar ul li{
+        margin: 10px;
+        text-overflow: inherit;
+        text-align: left;
+        list-style: none;
+        
+    }
+    
+    .side-bar ul li a{
+        color: black;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+    }
+    .side-bar ul li:hover{
+        background: palegreen;
+    }
+    
+    hr{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: aqua;
+    }
+    .grid-container{
+        box-sizing: border-box;
+        margin-top: 87px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        margin-right: 10px;
+        overflow-y: scroll;
+        margin-left: 0px;
+        
+    
+    }
+
+    .gallery{
+        text-align: center;
+        display: none;
+    
+    }
+    
+    .gallery h3{
+        margin-left: 40px;
+        color: #ff7200;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+    }
+    
+    .rowel{
+        display: flex;
+    }
+    
+    .gallery-col{
+        flex-basis: 50%;
+        display: none;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        margin: 2px;
+    }
+    
+    .gallery-col video{
+        width: 100%;
+    }
+    
+    
+    .container{
+        margin-top: 100px;
+        width: 100%;
+        background: #222;
+        margin-left: 5px;
+        margin-right: 5px;
+        position: fixed;
+        
+    }
+    
+    .swiper{
+        width: 350px;
+        height: 300px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .swiper-slide video{
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    
+
+    .video-col{
+        flex-basis: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0px;
+    }
+    
+    .video-col video{
+        width: 100%;
+    }
+    
+    .layer{
+        display: block;
+        padding-top: 0px;
+        margin-left: 5px;
+        background: #fff;
+        align-items: center;
+    }
+    
+    .contain{
+        display: flex;
+        align-items: center;
+    }
+    .layer img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    
+    .layer p{
+        width: 100%;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-align: left;
+        justify-content: center;
+        font-size: 0.3cm;
+        font-family: 'Times New Roman';
+    }
+    
+    .layer{
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .grid-container .last{
+        margin-bottom: 100px;
+    }
+    
+    
+    
+    .menuicon{
+        align-items: center;
+    
+        
+    }
+
+    .nav-left{
+        align-items: center;
+    }
+    
+    .nav-left .menuicon img{
+        width: 25px;
+        display: block;
+    }
+
+
+    .close{
+        display: block;
+    }
+    
+    .close img{
+        width: 25px;
+    }
+    
+}
+

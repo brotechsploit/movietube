@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oloo{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(pictures/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    width: 100%;
+
+}
+
+.form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    width: 400px;
+    height: 300px;
+    background: palegoldenrod;
+    border-radius: 3px;
+}
+
+.form h3{
+    text-align: center;
+    color: blue;
+    font-size: 25px;
+}
+
+.form p{
+    letter-spacing: 1px;
+    margin: 1px;
+}
+
+@media(max-width: 900px){
+    .form{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:50%;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+        width: 200px;
+        height: 300px;
+        background: palegoldenrod;
+    }
+    
+    .form h3{
+        text-align: center;
+        color: blue;
+        font-size: 25px;
+    }
+    
+    .form p{
+        letter-spacing: 1px;
+        margin: 1px;
+    }
+}
+

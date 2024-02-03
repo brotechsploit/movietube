@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(pictures/1.jpg);
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.dc{
+    padding: 10px 15px;
+    position: fixed;
+    background: #efefef;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+.header{
+    align-items: center;
+    text-align: center;
+}
+
+.content{
+    padding-top: 70px;
+    float: left;
+    margin-left: 5px;
+
+}
+
+.navcenter ul li{
+    align-items: center;
+    display: inline-block;
+    list-style: none;
+    padding: 10px 15px;
+
+}
+
+.navcenter ul li a{
+    text-decoration: none;
+    font-weight: 600;;
+    color: black;
+}
+
+.navcenter ul li:hover{
+    background: #ff7200;
+}
+
+
+
+.content h6{
+    font-weight: bold;
+    color: #ff7200;
+    font-size: 30px;
+    margin-left: 5px;
+
+}
+
+.content p{
+    color: aqua;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.form{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    background: #efefef;
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.form h1{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+}
+
+.form label{
+    display: block;
+    margin: 2px;
+}
+
+.form .container input{
+    width: 290px;
+    margin-left: 5px;
+}
+
+.form .container input ,textarea{
+    padding-left: 5px;
+}
+
+.form .container input:focus{
+    color: #ff7200;
+}
+
+.form .oloo{
+    width: 290px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background: #ff7200;
+
+}
+
+.form .oloo:hover{
+    background: #efefef;
+}
+
+.form .kilo{
+    width: 290px;
+    margin-left: 5px;
+}
+.form .colect input{
+    margin-left: 5px;
+}
+
+.form hr{
+    color: aqua;
+}
+
+.form .colect{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form .juu{
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.form .viny{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
