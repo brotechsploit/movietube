@@ -70,14 +70,14 @@
 <?php
 
     if($_SERVER["REQUEST_METHOD"] =="POST"){
-        $firstname=$_POST['fname'];
-        $lastname=$_POST['lname'];
-        $username=$_POST['username'];
-        $email=filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
-        $gender=$_POST['gender'];
-        $number=$_POST['number'];
-        $age=$_POST['age'];
-        $password=$_POST['password'];
+        $firstname =$_POST['fname'];
+        $lastname =$_POST['lname'];
+        $username =$_POST['username'];
+        $email =filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
+        $gender =$_POST['gender'];
+        $number =$_POST['number'];
+        $age =$_POST['age'];
+        $password =$_POST['password'];
 
 
         if(empty($firstname)){
@@ -106,6 +106,13 @@
             }
 
             
+        }
+        if(isset($_GET['submit'])){
+            if(!empty($_GET['juma'])){
+                $_SESSION['juma'] = $_GET['juma'];
+            }else if(empty($_GET['juma'])){
+                echo "<script type='text/javascript>alert('please click on the radio button to proceed')</script>";
+            }
         }
     }
 

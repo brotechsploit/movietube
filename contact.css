@@ -136,9 +136,21 @@ nav{
     position: absolute;
     left: 50%;
     width: 100%;
-    top: 70%;
+    top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.content .omena{
+    border-radius: 20px;
+    width: 70px;
+    background: #ff7200;
+    text-decoration: none;
+
+}
+
+.content .omena:hover{
+    background: blue;
 }
 .content h3{
     font-display: uppercase;

@@ -13,7 +13,7 @@ nav{
 }
 
 .header{
-    padding: 6px 10px;
+    height: 11vh;
     align-items: center;
     background: aqua;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -142,10 +142,10 @@ hr{
 }
 .grid-container{
     box-sizing: border-box;
-    margin-top: 370px;
+    top: 75px;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     position: fixed;
     margin-left: 250px;
     margin-right: 10px;
@@ -154,14 +154,11 @@ hr{
 
 }
 .container{
-    margin-top: 70px;
-    width: 80%;
+    margin-top: 10px;
+    width: 100%;
     background: #222;
-    float: right;
-    margin-left: 10px;
     margin-right: 10px;
-    margin-left: 260px;
-    position: fixed;
+    margin-left: 10px;
     
 }
 
@@ -182,13 +179,20 @@ hr{
 }
 
 .gallery{
-    text-align: center;
+    margin-bottom: 60px;
 
 }
 
 .gallery h3{
     margin-left: 40px;
     color: #ff7200;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.gallery h4{
+    margin-left: 40px;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
 }
@@ -214,35 +218,12 @@ hr{
 
 
 .omolo{
-    margin-bottom: 40px;
-}
-
-
-
-
-.omolo-col{
-    flex-basis: 28%;
-    display: grid;
-    overflow: hidden;
-    position: relative;
-    margin: 8px;
-    text-align: center;
-    justify-content: center;
-    margin-left: 40px;
-    margin-bottom: 50px;
-}
-
-.omolo-col video{
-    width: 100%;
-    height: 100%;
-}
-
-.omolo h3{
-    margin-left: 40px;
     text-align: left;
-    color: aqua;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+
+
 
 .layer{
     width: 100%;
@@ -254,6 +235,14 @@ hr{
     padding: 10px;
     text-align: left;
     display: flex;
+}
+
+.layer-col input{
+    background: #ff7200;
+}
+
+.layer-col input:hover{
+    background: blue;
 }
 
 .layer-col img{
@@ -297,7 +286,7 @@ hr{
     }
     
     .header{
-        padding: 6px 10px;
+        padding: 6px 12px;
         align-items: center;
         background: aqua;
         box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -413,29 +402,28 @@ hr{
     }
     .grid-container{
         box-sizing: border-box;
-        margin-top: 420px;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 93vh;
         position: fixed;
         margin-right: 10px;
         overflow-y: scroll;
         margin-left: 0px;
+        margin-top: calc(35px);
         
     
     }
     .container{
-        margin-top: 100px;
+        margin-top: 40px;
         width: 100%;
         background: #222;
         margin-left: 5px;
         margin-right: 5px;
-        position: fixed;
         
     }
     
     .swiper{
-        width: 350px;
+        width: 300px;
         height: 300px;
     }
     
@@ -447,11 +435,12 @@ hr{
     
     .swiper-slide video{
         width: 100%;
-        padding-top: 20px;
+        padding-top: 30px;
     }
     
     .gallery{
         text-align: center;
+        margin-top: 20px;
     
     }
     
@@ -459,6 +448,7 @@ hr{
         color: #ff7200;
         font-family: 'Times New Roman', Times, serif;
         text-align: left;
+        margin-left: 0px;
     }
     
     .rowel{
@@ -466,7 +456,7 @@ hr{
     }
     
     .gallery-col{
-        flex-basis: 28%;
+        flex-basis: 50%;
         display: grid;
         overflow: hidden;
         position: relative;
@@ -551,3 +541,4 @@ hr{
         width: 25px;
     }
 }
+

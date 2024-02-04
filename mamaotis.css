@@ -13,7 +13,7 @@ nav{
 }
 
 .header{
-    height: 9vh;
+    padding: 6px 10px;
     align-items: center;
     background: aqua;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -96,7 +96,7 @@ nav{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
     height: 93vh;
     overflow-y: scroll;
-    top: 60px;
+    top: 67px;
     position: fixed;
 }
 
@@ -142,14 +142,14 @@ hr{
 }
 .grid-container{
     box-sizing: border-box;
-    margin-top: 70px;
+    margin-top: 80px;
     justify-content: center;
     align-items: center;
     position: fixed;
     margin-left: 250px;
     margin-right: 10px;
     overflow-y: scroll;
-    height: 100vh;
+    height: 93vh;
     
 
 }
@@ -218,7 +218,7 @@ hr{
 }
 
 .last{
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     margin-left: 10px;
     
 }
@@ -383,7 +383,7 @@ hr{
     }
     
     .header{
-        height: 8vh;
+        padding: 6px 12px;
         align-items: center;
         background: aqua;
         box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -459,7 +459,7 @@ hr{
         box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
         height: 93vh;
         overflow-y: scroll;
-        top: 67px;
+        top: 54px;
         position: fixed;
         left: -250px;
         transition: 0.5s;
@@ -499,10 +499,10 @@ hr{
     }
     .grid-container{
         box-sizing: border-box;
-        margin-top: 87px;
+        top: 26px;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 93vh;
         position: fixed;
         margin-right: 10px;
         overflow-y: scroll;
@@ -627,6 +627,10 @@ hr{
         
     }
 
+    .last{
+        margin-bottom: 100px;
+    }
+
     .nav-left{
         align-items: center;
     }
@@ -644,6 +648,10 @@ hr{
     .close img{
         width: 25px;
     }
-    
+
+    .oloo img{
+        display: none;
+    }
 }
+
 

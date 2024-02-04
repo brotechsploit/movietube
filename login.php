@@ -20,11 +20,11 @@
                 <div class="header">
                     <div class="navcenter">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">All</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Images</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                            <li><a href="image.html">Images</a></li>
                         </ul>
                     </div>
                 </div>
