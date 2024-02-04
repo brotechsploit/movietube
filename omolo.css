@@ -100,9 +100,7 @@ nav{
     padding: 8px 12px;
     border-bottom: 1px dotted #fefefe;
     cursor: pointer;
-    transition: 0.5s;
     margin-bottom: 5px;
-    top: 60%;
 
 
 }
@@ -170,7 +168,7 @@ nav{
     .omega{
         padding: 0px 15px;
         background: #fefefe;
-        width: 250px;
+        width: 300px;
     
     }
     
@@ -181,7 +179,7 @@ nav{
     }
     
     .omega .search input{
-        width: 220px;
+        width: px;
         border: none;
         outline: none;
         background: transparent;
@@ -213,7 +211,7 @@ nav{
         background: #eee;
         max-height: 27vh;
         overflow-y: scroll;
-        width: 250px;
+        width: 300px;
         
     }
     
@@ -247,7 +245,7 @@ nav{
     .omega{
         padding: 0px 15px;
         background: #fefefe;
-        width: 250px;
+        width: 300px;
     
     }
     
@@ -258,7 +256,7 @@ nav{
     }
     
     .omega .search input{
-        width: 220px;
+        width: 250px;
         border: none;
         outline: none;
         background: transparent;
@@ -290,7 +288,7 @@ nav{
         background: #eee;
         max-height: 27vh;
         overflow-y: scroll;
-        width: 250px;
+        width: 300px;
         
     }
     

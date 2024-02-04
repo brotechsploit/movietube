@@ -79,7 +79,7 @@
                     
                         if($user_data['password'] ==$password);{
 
-                            header("location:secondpage.html");
+                            header("location:index.html");
                         }
                     
                 }else{
