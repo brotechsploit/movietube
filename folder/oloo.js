@@ -46,8 +46,13 @@ let availableKeywords =[
     "<li><a href ='burnaboy.html'>Burnaboy ft Ed sheeran its plenty</a></li>",
     "<li><a href ='burnaboy.html'>burnaboy on the low</a></li>",
     "<li><a href ='burnaboy.html'>Burna boy tested and approved lyrics</a></li>",
-    "<li><a href ='postmalone.html'>poloG rapster</a></li>",
-    "<li><a href ='postmalone.html'>poloG rapster</a></li>",
+    "<li><a href ='khaligraph.html'>khaligraph jones all songs</a></li>",
+    "<li><a href ='khaligraph.html'>mbona by khaligraph jones</a></li>",
+    "<li><a href ='khaligraph.html'>Tuma kitu by khaligraph jones</a></li>",
+    "<li><a href ='khaligraph.html'>hiroshima by khaligraph jones ft Dax</a></li>",
+    "<li><a href ='khaligraph.html'> khaligraph jones ndovu ni kuu</a></li>",
+    "<li><a href ='khaligraph.html'>khaligraph jones champez</a></li>",
+    "<li><a href ='khaligraph.html'>khaligraph jones all video songs</a></li>",
 
 
 
@@ -100,48 +105,3 @@ function selectInput(list){
     inputBox.value = list.innerHTML;
     resultsBox.innerHTML = '';
 }
-function searchFunction(){
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("input-box");
-    filter = input.value.toLowerCase();
-    ul = document.getElementsById("myList");
-    li = ul.getElementsByTagName("li");
-    for(i = 0; i<li.length; i++){
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-    } 
-    
-    if(txtValue.toLowerCase().indexof(filter)>-1){
-        li[i].style.display = "";
-    }
-    else{
-        li[i].style.display = "none";
-    }
-}
-
-function search(){
-    var searchTerm = document.getElementById('searchbutton').Value;
-    fetchResultsFromServer(searchTerm);
-
-}
-
-function displayResults(results){
-    var resultsContainer = document.getElementById('input-box');
-    resultsContainer.innerHTML = '';
-
-    results.forEach(function(result){
-        var resultElement = document.createElement('div');
-        resultElement.innerHTML = '<h3>${result.title}</h3><p>${result.description}</p>';
-
-        resultsContainer.appendChild(resultElement);
-    });
-}
-
-function fetchResultsFromServer(searchTerm){
-    fetch('http://http://localhost/phpmyadmin/server.php?search=${searchTerm}')
-    .then(response =>response.json())
-    .then(results => displayResults(results)).catch(error => console.error('Error fetching results:', error));
-        
-}
-
-
