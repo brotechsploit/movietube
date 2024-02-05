@@ -23,9 +23,9 @@ nav{
 
 .navlinks ul li a{
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     color: blue;
-    font-size: 25px;
+    font-size: 15px;
 
 }
 
@@ -45,6 +45,7 @@ nav{
     padding: 0px 15px;
     background: #fefefe;
     width: 500px;
+    border-radius: 20px;
     
 
 }
@@ -164,11 +165,12 @@ nav{
     display: inherit;
 }
 
-@media(max-width: 900px){
+@media(max-width: 600px){
     .omega{
         padding: 0px 15px;
         background: #fefefe;
         width: 300px;
+        border-radius: 20px;
     
     }
     
@@ -302,8 +304,6 @@ nav{
     
     .result-box ul li a{
         text-decoration: none;
-        font-weight: 900;
-        font-family: 'Times New Roman', Times, serif;
     }
     
     .result-box ul li:hover{

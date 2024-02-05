@@ -1,122 +1,109 @@
 <?php
-    include("config.php")
+    include("post.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signup.css">
-    <title>Brotechsploit</title>
+    <title>movietube</title>
 </head>
 <body>
-    <section>
-        <div class="form">
-            
-                <h1>REGSITRATION</h1>
-                <hr>
-            <form action="signup.php" method="POST">
-                <div class="container">
-                    <label for="Firstname">Firstname</label>
-                    <input type="text" name="fname" required autocomplete="off">
-                </div>
-                <div class="container">
-                    <label for="lastname">Lastname</label>
-                    <input type="text" name="lname" required autocomplete="off">
-                </div>
-                <div class="container">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" required autocomplete="off">
-                </div>
-                <div class="container">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required accept="@gmail.com,@yahoo.com" autocomplete="off">
-                </div>
-                <div class="container">
-                    <label for="gender">Gender</label>
-                    <select name="gender" id="" class="kilo" autocomplete="off">
-                        <option value="">Sex</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="Rather not say">Rather not say</option>
-                        <option value="Transgender">Transgender</option>
-                    </select>
-                </div>
-                <div class="container">
-                    <label for="number">Number</label>
-                    <input type="tel" name="number" required autocomplete="off">
-                </div>
-                <div class="container">
-                    <label for="age">Age</label>
-                    <input type="number" name="age" required autocomplete="off">
-                </div>
-                
-                <div class="container">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" required autocomplete="off">
-                </div>
-                <div class="colect">
-                    <p><input type="radio" name="juma" required>By click you agree to the conditions and terms of our site<a href="">TermsConditions</a></p>
-                </div>
-                <div class="view">
-                    <input type="submit" value="REGISTER" name="submit"  class="oloo">
-                </div>
+    <div class="form">
+        
+            <h2>REGISTRATION</h2>
+            <hr>
+            <form action="" method="POST">
+                    <div class="dp">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" name="fname" required>
+                    </div>
+                    <div class="dp">
+                        <label for="lasttname">Lastname</label>
+                        <input type="text" name="lname" required>
+                    </div>
+                    <div class="dp">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" required>
+                    </div>
+                    <div class="dp">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="dp">
+                        <label for="number">Phonenumber</label>
+                        <input type="tel" name="number" required>
+                    </div>
+                    <div class="dp">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" class="gender">
+                            <option value="">Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                            <option value="lgbtq">LGBTQ</option>
+                        </select>
+                    </div>
+                    <div class="dp">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" required>
+                    </div>
+                    <div class="dp">
+                        <label for="password">password</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="dop">
+                        <p><input type="radio"  required  name="tick">By clicking it symbolizes you have agreed to our terms and condition which are<a href="">Terms and condition</a></p>
+                    </div>
+                    <div class="dip">
+                        <input type="submit" name="submit" value="REGISTER" class="joo">
+                    </div>
+
             </form>
-        </div>
-    </section>
+            
+    </div>
 </body>
 </html>
 <?php
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
+        $firstname = $_POST['fname'];
+        $lastname = $_POST['lname'];
+        $username = $_POST['username'];
+        $email = filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL);
+        $num = $_POST['number'];
+        $gender = $_POST['gender'];
+        $age = $_POST['age'];
+        $password = $_POST['password'];
 
-    if($_SERVER["REQUEST_METHOD"] =="POST"){
-        $firstname =$_POST['fname'];
-        $lastname =$_POST['lname'];
-        $username =$_POST['username'];
-        $email =filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
-        $gender =$_POST['gender'];
-        $number =$_POST['number'];
-        $age =$_POST['age'];
-        $password =$_POST['password'];
+        $verify_query =mysqli_query($con,"SELECT Username FROM raj WHERE username ='$username'");
+        if(mysqli_num_rows($verify_query) > 0){
 
-
-        if(empty($firstname)){
-
-            echo "<script type='text/javascript>alert('please enter your firstname')";
-            
-        }elseif(empty($email)){
-
-            echo "<script type='text/javascript'>alert('please enter your email')";
+            header("location:username.html");
         }else{
+            $sql = "INSERT INTO raj(fname,lname,username,email,number,gender,age,password) VALUES('$firstname','$lastname','$username','$email','$num','$gender','$age','$password')";
+            mysqli_query($con,$sql);
 
-            $verify_query=mysqli_query($con,"SELECT username FROM raj WHERE username='$username'");
-            if(mysqli_num_rows($verify_query) !=0){
-
-                header("location: username.html");
+            header("location:message.html");
+        }
+        
+        
+        
+    
+        if(isset($_POST['tick'])){
+            if(!empty($_POST['tick'])){
+                $_SESSION['tick']=$_POST['tick'];
             }else{
-                $sql="INSERT INTO raj(fname,lname,username,email,gender,number,age,password)values('$firstname','$lastname','$username','$email','$gender','$number','$age','$password')";
+                if(empty($_POST['tick'])){
 
-                mysqli_query($con,$sql);{
-                    header("location :lognow.html");
-
+                    echo "<script type='text/javascript'>alert('please click on the radio button to proceed)</script>";
                 }
-
-
-
-            }
-
-            
-        }
-        if(isset($_GET['submit'])){
-            if(!empty($_GET['juma'])){
-                $_SESSION['juma'] = $_GET['juma'];
-            }else if(empty($_GET['juma'])){
-                echo "<script type='text/javascript>alert('please click on the radio button to proceed')</script>";
             }
         }
-    }
+}
 
-    mysqli_close($con)
+
+mysqli_close($con);
 ?>
-
-
