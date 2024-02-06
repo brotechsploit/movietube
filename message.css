@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(pictures/1.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.content{
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+}
+
+.content h2{
+    color: #ff7200;
+    font-weight: 900;
+    font-family: 'Times New Roman';
+
+}
+
+.btn{
+    width: 100px;
+    background: aqua;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.btn a{
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.btn:hover{
+    background: blue;
+}

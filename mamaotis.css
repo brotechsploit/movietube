@@ -5,13 +5,7 @@
     font-family: sans-serif;
 }
 
-body{
-    background: #222;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -22,8 +16,8 @@ nav{
 .header{
     padding: 6px 10px;
     align-items: center;
-    background: aqua;
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    background: rgb(62, 7, 94);
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.8);
 }
 
 .nav-left{
@@ -163,7 +157,8 @@ hr{
 
 .videos{
     padding-top: 10px;
-    margin-left: 10px
+    margin-left: 0px
+
 
 
 }
@@ -180,9 +175,10 @@ hr{
 }
 
 .video-col{
-    flex-basis: 32%;
+    flex-basis: 50%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 }
 
 .video-col video{
@@ -196,7 +192,7 @@ hr{
 .layer{
     display: block;
     padding-top: 0px;
-    margin-left: 10px;
+    padding-left: 20px;
     background: #fff;
 }
 
@@ -217,7 +213,6 @@ hr{
     justify-content: center;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 5px;
 }
 
 .layer .oloo{
@@ -226,7 +221,7 @@ hr{
 
 .last{
     margin-bottom: 100px;
-    margin-left: 10px;
+    margin-left: 5px;
     
 }
 
@@ -317,15 +312,25 @@ hr{
     display: flex;
     margin-left: 0;
 }
+
 .layer-col .low a{
     text-align: left;
 
 }
 
-.layer-col .low p{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
 
+
+.layer2{
+    margin-left: 0px;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.layer2 .layer-col2{
+    margin-left: 0px;
+    text-align: left;
+    padding: 10px;
+    background: aquamarine;
 }
 .omolo{
     margin-bottom: 40px;
@@ -381,7 +386,7 @@ hr{
     display: flex;
 }
 
-@media(max-width :900px){
+@media(max-width :650px){
     nav{
         display: flex;
         justify-content: space-between;
@@ -392,7 +397,7 @@ hr{
     .header{
         padding: calc(12px);
         align-items: center;
-        background: aqua;
+        background: rgb(62, 7, 94);
         box-shadow: 0 0 30px 0px rgba(0,0,0,0.8);
     }
     
@@ -466,7 +471,7 @@ hr{
         box-shadow: 0 0 30px 0px rgba(0,0,0,0.8);
         height: 93vh;
         overflow-y: scroll;
-        top: 54px;
+        top: 65px;
         position: fixed;
         left: -250px;
         transition: 0.5s;
@@ -536,7 +541,7 @@ hr{
     }
     
     .gallery-col{
-        flex-basis: 50%;
+        flex-basis: 32%;
         display: none;
         overflow: hidden;
         position: relative;
@@ -580,7 +585,8 @@ hr{
 
     .videos{
         padding-top: 10px;
-        margin-left: 10px
+        margin-left: 0px;
+        margin-right: 0px;
     
     
     }
@@ -600,10 +606,12 @@ hr{
         flex-basis: 28%;
         overflow: hidden;
         position: relative;
+        margin-left: 5px;
     }
     
     .video-col video{
         width: 100%;
+    
     }
     
     .videos .rowel{
@@ -613,8 +621,10 @@ hr{
     .layer{
         display: block;
         padding-top: 0px;
-        margin-left: 10px;
-        background: #fff;
+        margin-left: 5px;
+        background: aqua;
+        width: 100%;
+        margin-right: 5px;
     }
     
     .contain{
@@ -634,7 +644,7 @@ hr{
         justify-content: center;
         font-weight: 900;
         font-family: 'Times New Roman', Times, serif;
-        margin-left: 5px;
+        margin-left: 0px;
     }
     
     .layer .oloo{
@@ -643,7 +653,7 @@ hr{
     
     .last{
         margin-bottom: 100px;
-        margin-left: 10px;
+        margin-left: 0px;
         
     }
     
@@ -651,7 +661,7 @@ hr{
         background: #ff7200;
         width: 70px;
         cursor: pointer;
-        margin-left: 5px;
+        margin-left: 0px;
         margin-top: 5px;
     
     }
